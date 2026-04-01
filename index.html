@@ -21,7 +21,13 @@
             <h1 class="heading">Generate a</h1>
             <h2 class="sub-heading">random password</h2>
             <p class="para-heading">Never use insecure password again.</p>
-            <button id="generatepass" class="btn">Generate passwords</button>
+            <div class="slider-container">
+                <div class="slider">
+                    <label for="length-slider">Password Length: <span id="length-value">8</span></label>
+                    <input type="range" id="length-slider" min="4" max="16" value="8">
+                </div>
+                <button id="generatepass" class="btn">Generate passwords</button>
+            </div>
         </div>
 
         <div class="pass-con">
