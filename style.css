@@ -1,0 +1,85 @@
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #1c2531;
+  border-radius: 8px;
+  min-width: 500px;
+  min-height: 400px;
+  height: auto;
+  width: auto;
+  margin: 50px auto;
+  padding: 0px 30px 0px 30px;
+}
+.pass-generator {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-bottom: 1px #e7eaea solid;
+}
+.heading {
+  color: #e7eaea;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+.sub-heading {
+  margin-top: 0px;
+  color: #48d780;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.para-heading {
+  color: #888e9a;
+  margin-top: 0px;
+}
+.btn {
+  margin-top: 30px;
+  background-color: #13b175;
+  border: none;
+  font-size: medium;
+  padding: 2px 4px;
+  width: auto;
+  min-width: 150px;
+  min-height: 40px;
+  color: #affade;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pass-con {
+  display: flex;
+  margin: 40px 0px 0px 0px;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 2px;
+}
+.pass {
+  color: #67a68e;
+  background-color: #232e41;
+  min-width: 150px;
+  min-height: 40px;
+  margin: 0px 15px;
+  padding: 15px 5px 0px 10px;
+}
+.copy-pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#copied-pass {
+  color: #67a68e;
+  background-color: #232e41;
+  border: 1px solid #67a68e;
+  padding: 10px 13px;
+
+}
+.pass:hover {
+  cursor: pointer;
+  background-color: #2c3a52;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
