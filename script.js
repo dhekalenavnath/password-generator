@@ -8,11 +8,11 @@ const copiedPass = document.getElementById("copied-pass");
 const generatePassBtn = document.getElementById("generatepass");
 const pass1El = document.getElementById("pass1-el");
 const pass2El = document.getElementById("pass2-el");
-const lengthSlider = document.getElementById("length-slider");
-const lengthValue = document.getElementById("length-value");
+const lengthSlider=document.getElementById("length-slider");
+const lengthValue=document.getElementById("length-value");
 
-lengthSlider.addEventListener("input", function () {
-    lengthValue.textContent = lengthSlider.value
+lengthSlider.addEventListener("input",function(){
+    lengthValue.textContent=lengthSlider.value
 })
 
 generatePassBtn.onclick = passGenerator
@@ -44,13 +44,13 @@ function copyToClipboard(e) {
 
     }
     navigator.clipboard.writeText(text);
-    copiedPass.textContent = "✅ Copied: " + text
-    let masked = text.slice(0, 2) + "*****" + text.slice(-2)
+    let masked=text.slice(0,2)+"****"+text.slice(-2)
     copiedPass.textContent = "✅ Copied: " + masked
-    copiedPassDelay()
+    clearMessageAfterDelay()
 }
-function copiedPassDelay() {
-    setTimeout(() => {
-        copiedPass.textContent = "📋 Click on password to copy "
-    }, 2000);
+
+function clearMessageAfterDelay() {
+   setTimeout(()=>{
+    copiedPass.textContent="📋 Click on password to copy"
+   },2000)
 }
